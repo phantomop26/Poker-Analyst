@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Poker Analyst - Win Percentage Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🃏 Poker Analyst</h1>
+            <p>Calculate your winning chances with opponent behavior analysis</p>
+        </header>
+
+        <div class="main-content">
+            <!-- Your Hand Section -->
+            <section class="hand-section">
+                <h2>Your Hand</h2>
+                <div class="card-selection">
+                    <div class="card-slot" id="player-card-1">
+                        <span class="card-placeholder">Click to select</span>
+                    </div>
+                    <div class="card-slot" id="player-card-2">
+                        <span class="card-placeholder">Click to select</span>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Community Cards Section -->
+            <section class="community-section">
+                <h2>Community Cards</h2>
+                <div class="community-cards">
+                    <div class="flop">
+                        <h3>Flop</h3>
+                        <div class="card-row">
+                            <div class="card-slot community-card" id="flop-1">
+                                <span class="card-placeholder">?</span>
+                            </div>
+                            <div class="card-slot community-card" id="flop-2">
+                                <span class="card-placeholder">?</span>
+                            </div>
+                            <div class="card-slot community-card" id="flop-3">
+                                <span class="card-placeholder">?</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="turn">
+                        <h3>Turn</h3>
+                        <div class="card-slot community-card" id="turn">
+                            <span class="card-placeholder">?</span>
+                        </div>
+                    </div>
+                    <div class="river">
+                        <h3>River</h3>
+                        <div class="card-slot community-card" id="river">
+                            <span class="card-placeholder">?</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Opponents Section -->
+            <section class="opponents-section">
+                <h2>Opponents</h2>
+                <div class="opponents-controls">
+                    <button id="add-opponent" class="btn btn-secondary">+ Add Opponent</button>
+                    <span class="opponent-count">Opponents: <span id="opponent-count">0</span></span>
+                </div>
+                <div class="opponents-list" id="opponents-list">
+                    <!-- Opponents will be added dynamically -->
+                </div>
+            </section>
+
+            <!-- Results Section -->
+            <section class="results-section">
+                <h2>Win Probability & Recommendation</h2>
+                <div class="results-display">
+                    <div class="win-percentage">
+                        <span class="percentage-value" id="win-percentage">--</span>
+                        <span class="percentage-label">%</span>
+                    </div>
+                    <div class="hand-strength">
+                        <span id="hand-description">Select your cards to begin</span>
+                    </div>
+                </div>
+                <div class="recommendation-box" id="recommendation-box" style="display: none;">
+                    <div class="recommendation-action" id="recommendation-action"></div>
+                    <div class="recommendation-description" id="recommendation-description"></div>
+                </div>
+                <button id="calculate-btn" class="btn btn-primary" disabled>Calculate Odds</button>
+            </section>
+        </div>
+
+        <!-- Card Selector Modal -->
+        <div class="modal" id="card-selector-modal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3>Select Card</h3>
+                    <button class="close-btn" id="close-modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <div class="suits">
+                        <div class="suit-section">
+                            <h4>♠ Spades</h4>
+                            <div class="cards-grid" data-suit="spades">
+                                <!-- Cards will be generated by JavaScript -->
+                            </div>
+                        </div>
+                        <div class="suit-section">
+                            <h4>♥ Hearts</h4>
+                            <div class="cards-grid" data-suit="hearts">
+                                <!-- Cards will be generated by JavaScript -->
+                            </div>
+                        </div>
+                        <div class="suit-section">
+                            <h4>♦ Diamonds</h4>
+                            <div class="cards-grid" data-suit="diamonds">
+                                <!-- Cards will be generated by JavaScript -->
+                            </div>
+                        </div>
+                        <div class="suit-section">
+                            <h4>♣ Clubs</h4>
+                            <div class="cards-grid" data-suit="clubs">
+                                <!-- Cards will be generated by JavaScript -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="poker-logic.js"></script>
+    <script src="script.js"></script>
+</body>
+</html> 
