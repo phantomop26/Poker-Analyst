@@ -1,16 +1,16 @@
-# 🃏 Poker Analyst - Win Percentage Calculator
+# Poker Analyst - Win Percentage Calculator
 
 A sophisticated poker win percentage calculator with opponent behavior analysis. Calculate your chances of winning based on your hand, community cards, and opponent playing styles.
 
 ## Features
 
-### 🎯 Core Functionality
+### Core Functionality
 - **Hand Input**: Select your hole cards from an intuitive card selector
 - **Community Cards**: Input flop, turn, and river cards as they're revealed
 - **Win Percentage**: Monte Carlo simulation with 5,000+ iterations for accurate odds
 - **Real-time Calculation**: Instant updates as you modify cards or opponents
 
-### 🎭 Opponent Behavior Analysis
+### Opponent Behavior Analysis
 Choose from 10 different poker player archetypes:
 
 1. **Tight-Aggressive (TAG)** - Plays few hands but plays them aggressively
@@ -24,7 +24,7 @@ Choose from 10 different poker player archetypes:
 9. **Slow Roller** - Takes time with decisions, moderate aggression
 10. **Chatty/Distracted** - Unfocused player with suboptimal play
 
-### 📊 Smart Analysis
+### Smart Analysis
 - **Hand Strength Evaluation**: Comprehensive poker hand ranking system
 - **Behavioral Adjustments**: Win percentages adjusted based on opponent tendencies
 - **Game Stage Awareness**: Different calculations for preflop, flop, turn, and river
@@ -104,7 +104,7 @@ Slow Roller – Takes time with decisions, moderate aggression
 
 Chatty/Distracted – Unfocused player with suboptimal play
 
-#### 📋 Detailed Behavior Profiles
+#### Detailed Behavior Profiles
 
 Each archetype is modeled with realistic poker stats:
 
