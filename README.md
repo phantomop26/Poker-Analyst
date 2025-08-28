@@ -79,6 +79,47 @@ Each opponent type has statistical profiles including:
 - Game stage modifiers (preflop adjustments are strongest)
 - Results rounded to one decimal place for clarity
 
+
+### Opponent Behavior Analysis
+
+Choose from 10 different poker player archetypes:
+
+Tight-Aggressive (TAG) – Plays few hands but aggressively
+
+Loose-Aggressive (LAG) – Plays many hands with high aggression
+
+Tight-Passive – Very selective, rarely aggressive
+
+Loose-Passive – Plays too many hands, calls frequently
+
+Maniac – Extremely aggressive, plays almost any hand
+
+Nit – Ultra-tight player, only plays premium hands
+
+Calling Station – Calls frequently, rarely folds or raises
+
+Rock – Extremely tight and predictable
+
+Slow Roller – Takes time with decisions, moderate aggression
+
+Chatty/Distracted – Unfocused player with suboptimal play
+
+📋 Detailed Behavior Profiles
+
+Each archetype is modeled with realistic poker stats.
+
+Archetype	VPIP	PFR	Aggression	Bluff Freq	CBet	Fold to CBet	3Bet	Fold to 3Bet	Hand Range Multiplier	Position Awareness	Stack Sensitivity
+Tight-Aggressive	20%	16%	3.5	0.10	0.75	0.45	0.08	0.65	0.8	0.9	0.8
+Loose-Aggressive	35%	25%	4.0	0.20	0.85	0.35	0.15	0.45	1.4	0.7	0.6
+Tight-Passive	15%	8%	1.5	0.05	0.45	0.65	0.03	0.85	0.6	0.5	0.9
+Loose-Passive	45%	12%	1.2	0.08	0.35	0.25	0.04	0.75	1.8	0.3	0.4
+Maniac	60%	45%	6.0	0.35	0.95	0.15	0.25	0.25	2.5	0.4	0.3
+Nit	12%	10%	2.0	0.03	0.55	0.75	0.02	0.95	0.4	0.6	0.95
+Calling Station	50%	5%	0.8	0.02	0.25	0.15	0.01	0.55	2.0	0.2	0.2
+Rock	8%	6%	2.5	0.01	0.65	0.85	0.015	0.98	0.3	0.7	0.98
+Slow Roller	25%	18%	2.8	0.12	0.65	0.55	0.06	0.70	1.0	0.8	0.75
+Chatty/Distracted	30%	15%	2.2	0.15	0.50	0.40	0.05	0.60	1.2	0.4	0.5
+
 ## Browser Compatibility
 
 Works in all modern browsers:
